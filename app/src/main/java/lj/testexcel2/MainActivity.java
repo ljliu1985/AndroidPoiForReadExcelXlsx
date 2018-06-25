@@ -51,8 +51,20 @@ public class MainActivity extends AppCompatActivity {
             for (Row row : sheet) {
                 System.out.print("row:" + i + "--->:");
                 i++;
+               String value = null;
                 for (Cell cell : row) {
-                    System.out.print(getCellValue(cell) + ",");
+                     switch (cell.getCellTypeEnum()) {
+                            case STRING:
+                                value = cell.getStringCellValue();
+                                break;
+                            case NUMERIC:
+                                value = String.valueOf(cell.getNumericCellValue());
+                                break;
+                            default:
+                                continue;
+                        }
+
+                    System.out.print(value + ",");
                 }
                 System.out.println();
             }
@@ -62,12 +74,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * 获取单元格内的数据值
-     */
-    private static String getCellValue(Cell cell) {
-        cell.setCellType(Cell.CELL_TYPE_STRING);
-        return cell.getStringCellValue();
-
-    }
 }
