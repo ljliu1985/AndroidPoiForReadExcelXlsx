@@ -1,5 +1,10 @@
-基于注解导入和导出excel，RxJava处理，包含进度信息，生成对象，数据校验，支持U盘导入导出
+#-------20180824
+
+基于注解导入和导出excel，RxJava处理，包含进度信息，生成对象，数据校验，支持U盘导入导出。
 https://github.com/ljliu1985/rxpoireadexcelxlsx
+
+#-------
+
 
 #Android PoiReadExcelXlsx
 使用Poi读取高版本Excel xlsx文件， 
