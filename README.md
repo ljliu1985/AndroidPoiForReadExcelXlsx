@@ -36,7 +36,4 @@ javax.xml.stream.FactoryConfigurationError: Provider com.sun.xml.internal.stream
         at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:184)
         at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:149)	
 	
-	
- ## Donate
-![weixinpay](https://github.com/ljliu1985/other/blob/master/weixinpay.png)
-![alipay](https://github.com/ljliu1985/other/blob/master/zhifubaopay.png)	
+
